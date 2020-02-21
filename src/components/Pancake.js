@@ -54,13 +54,13 @@ class Pancake extends React.Component {
     if (flippedAt > 2 || timeCooked > 4) return "burnt";
     if (timeCooked === 4 && flippedAt === 2) return "cooked";
     return "raw";
-  };
+  }
 
-  takeItOff = () => {
+  takeItOff(){
     const { id } = this.props;
     let status = this.getPancakeStatus();
     this.props.takeItOff(id, status);
-  };
+  }
 
   render() {
     const { timeCooked, flippedAt } = this.state;
