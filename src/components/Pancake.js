@@ -40,7 +40,7 @@ class Pancake extends React.Component {
     });
   }
 
-  getPancakeStatus = () => {
+  getPancakeStatus(){
     const { timeCooked, flippedAt } = this.state;
 
     // first side
