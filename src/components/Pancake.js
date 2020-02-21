@@ -30,15 +30,15 @@ class Pancake extends React.Component {
     this.interval = setInterval(this.updateCounter, 1000);
   }
 
-  cleanUpInterval = () => {
+  cleanUpInterval(){
     this.clearInterval(this.interval);
-  };
+  }
 
-  flip = () => {
+  flip(){
     this.setState({
       flippedAt: this.state.timeCooked
     });
-  };
+  }
 
   getPancakeStatus = () => {
     const { timeCooked, flippedAt } = this.state;
